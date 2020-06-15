@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="15dp"
+    android:focusable="true"
+    android:layout_marginTop="2dp"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/music_placeholder"
+        android:id="@+id/iv_artwork"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:text="songs title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingRight="50dp"
+        android:textColor="@color/white"
+        android:paddingEnd="50dp"
+        android:layout_toRightOf="@+id/iv_artwork"
+        android:layout_toEndOf="@+id/iv_artwork"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_artwork"
+        android:layout_toEndOf="@+id/iv_artwork"
+        android:text="Artist"
+        android:textColor="@color/white"
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/tv_artist"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_duration"
+        android:text="3:05"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_play_active"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_duration"
+        android:src="@drawable/ic_play_circle_outline_white"
+        android:visibility="invisible"/>
+</RelativeLayout>
